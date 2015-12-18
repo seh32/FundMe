@@ -110,13 +110,19 @@ def grant_info(myidlist, disease, summaryfile, datafile):
         for tag in grants:
             # get grant agency info
             if "agency" in str(tag):
-                agency = (str(tag.find('agency').text))
+                try:
+                    agency = (str(tag.find('agency').text))
+                except UnicodeEncodeError or AttributeError:
+                    agency = "Agency Error. See Pubmed article id " + str(item) + " for agency information."
                 if agency not in grantagencies:
                     grantagencies.append(agency)
                     agencydict[agency] = agencydict.get(agency, 0) + 1
             # get grant id info
             if "id" in str(tag):
-                grantid = (str(tag.find('grantid').text).replace(" ", ""))
+                try:
+                    grantid = (str(tag.find('grantid').text).replace(" ", ""))
+                except UnicodeEncodeError or AttributeError:
+                    grantid = "Grant ID Error. See Pubmed article id " + str(item) + " for grant ID information."
                 if grantid not in grantids:
                     grantids.append(grantid)
         # append article information to datafile
