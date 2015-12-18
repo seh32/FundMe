@@ -6,7 +6,7 @@ FundMe.py will search the PubMed database for articles on diseases from a given 
 FundMe uses the Entrez E-utility API for PubMed. See http://www.ncbi.nlm.nih.gov/books/NBK25501. 
 
 ##Dependencies
-1. Python
+1. Python 2.7
 2. BeautifulSoup library. See https://pypi.python.org/pypi/beautifulsoup4/4.3.2.
 
 ##To use:
