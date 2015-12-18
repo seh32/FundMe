@@ -1,5 +1,5 @@
 # FundMe
-A search tool to return information about research grant support on a given list of diseases.
+A search tool to return information about research grant support on a given list of research topics, such as diseases.
 
 ##Overview:
 FundMe.py will search the PubMed database for articles on diseases from a given list and return grant information. 
@@ -25,7 +25,7 @@ FundMe uses the Entrez E-utility API for PubMed. See http://www.ncbi.nlm.nih.gov
    
   a. Disease name
 
-  b. Number of articles with the disease in the article title (maximum of 1000).
+  b. Number of articles resulting from a PubMed search of the disease name (maximum of 1000 articles).
     
   c. Number of these articles with listed grant support.
     
