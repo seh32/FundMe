@@ -5,8 +5,13 @@ A search tool to return information about research grant support on a given list
 FundMe.py will search the PubMed database for articles on diseases from a given list and return grant information. 
 FundMe uses the Entrez E-utility API for PubMed. See http://www.ncbi.nlm.nih.gov/books/NBK25501. 
 
+##Dependencies
+1. Python
+2. BeautifulSoup library. See https://pypi.python.org/pypi/beautifulsoup4/4.3.2.
+
 ##To use:
 1. Make sure you have python running on your machine. See https://wiki.python.org/moin/BeginnersGuide/Download
+2. Download the BeautifulSoup library. (See Dependencies)
 2. Download FundMe.py to your machine from this github repository.
 3. Open a terminal window.
 4. Navigate to the directory containing FundMe.py
