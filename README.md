@@ -7,10 +7,10 @@ FundMe uses the Entrez E-utility API for PubMed. See http://www.ncbi.nlm.nih.gov
 
 ##To use:
 1. Make sure you have python running on your machine. See https://wiki.python.org/moin/BeginnersGuide/Download
-2. Download FundMe.py to your machine.
+2. Download FundMe.py to your machine from this github repository.
 3. Open a terminal window.
 4. Navigate to the directory containing FundMe.py
-5. Create file containing a list of diseases of interest.
+5. Create file containing a list of diseases of interest, one disease per line.
 6. Enter `"python FundMe.py"`
 7. Follow prompts in terminal.
 
