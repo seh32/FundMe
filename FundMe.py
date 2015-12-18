@@ -126,7 +126,7 @@ def grant_info(myidlist, disease, summaryfile, datafile):
                 if grantid not in grantids:
                     grantids.append(grantid)
         # append article information to datafile
-        data.write(item + '\n' + disease + '\n' + "Title: " + title + '\n' + year + '\n')
+        data.write("Disease: " + disease + '\n' + "Title: " + title + '\n' + year + '\n' + "PubMed ID: " + item + '\n')
         if len(grantagencies) > 0:
             data.write("Grant Agencies: " + ' '.join(map(str, grantagencies)) + '\n')
         if len(grantids) > 0:
